@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter, JetBrains_Mono, Geist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { AmbientNetwork } from "@/components/AmbientNetwork";
+import { ChatWidget } from "@/components/ChatWidget";
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} bg-ink font-body text-paper antialiased`}>
         <AmbientNetwork />
         {children}
+        <ChatWidget />
       </body>
     </html>
   );

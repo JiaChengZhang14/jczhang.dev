@@ -3,8 +3,8 @@ import { TerminalWindow } from "@/components/sections/hero/TerminalWindow";
 
 export function Hero() {
   return (
-    <SectionWrapper id="hero" className="min-h-[90vh]">
-      <div className="grid items-center gap-12 md:grid-cols-2">
+    <SectionWrapper id="hero" className="flex items-center min-h-screen">
+      <div className="grid items-center justify-center gap-12 md:grid-cols-2">
         <div>
           <p className="mb-4 font-mono text-sm text-ember">
             {"// FullStack Developer"}
