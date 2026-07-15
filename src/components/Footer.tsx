@@ -29,6 +29,7 @@ export function Footer() {
                     <p className="font-display text-lg font-semibold text-paper">
                         Jiacheng Zhang
                     </p>
+                    <p className="mt-1 font-mono text-sm text-fog">{"contact.jczhang@gmail.com"}</p>
                     <p className="mt-1 font-mono text-sm text-fog">
                         {"Madrid, Spain"}
                     </p>
@@ -49,10 +50,9 @@ export function Footer() {
                     ))}
                 </div>
             </div>
-
             <div className="border-t border-white/5 py-4">
                 <p className="text-center font-mono text-xs text-fog/70">
-                    © {year} Jiacheng Zhang
+                    © {year} JiaCheng Zhang
                 </p>
             </div>
         </footer>
