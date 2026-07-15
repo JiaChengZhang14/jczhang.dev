@@ -24,7 +24,7 @@ export const PROJECTS: Project[] = [
                 "Implementé Klaro + Google Analytics Consent Mode v2 para que el sitio recogiera datos analíticos solo con consentimiento explícito, cumpliendo GDPR sin perder visibilidad sobre el tráfico real.",
         },
         image: "/images/aldebaran.png",
-        liveUrl: "https://limpiacristales.net",
+        liveUrl: "https://limpiacristales-net.vercel.app/",
         featured: true,
     },
     {
