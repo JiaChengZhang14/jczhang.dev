@@ -71,9 +71,9 @@ export function ChatWidget() {
         <div className="fixed bottom-6 right-6 z-50">
             {isMounted && (
                 <div
-                    className={`absolute bottom-[4.5rem] right-0 flex h-[420px] w-80 origin-bottom-right flex-col rounded-lg border border-white/10 bg-surface shadow-2xl transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen
-                            ? "scale-100 opacity-100"
-                            : "pointer-events-none scale-90 opacity-0"
+                    className={`absolute bottom-18 right-0 flex h-105 w-80 origin-bottom-right flex-col rounded-lg border border-white/10 bg-surface shadow-2xl transition-all duration-200 ease-[cubic-bezier(0.16,1,0.3,1)] ${isOpen
+                        ? "scale-100 opacity-100"
+                        : "pointer-events-none scale-90 opacity-0"
                         }`}
                 >
                     <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
@@ -88,8 +88,8 @@ export function ChatWidget() {
                             <div
                                 key={i}
                                 className={`max-w-[85%] rounded-md px-3 py-2 text-sm ${m.role === "user"
-                                        ? "ml-auto bg-signal text-paper"
-                                        : "bg-ink text-paper/90"
+                                    ? "ml-auto bg-signal text-paper"
+                                    : "bg-ink text-paper/90"
                                     }`}
                             >
                                 {m.content}
