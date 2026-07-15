@@ -1,14 +1,12 @@
 import { Project } from "@/lib/types";
 
-
-
 export const PROJECTS: Project[] = [
     {
         slug: "aldebaran",
         title: "Limpiacristales.net",
-        tagline: "Web de servicios profesionales para cliente (En desarrollo)",
+        tagline: "Professional service website for client (Under development)",
         problem:
-            "Un negocio de limpieza de cristales necesitaba una web profesional que generara confianza y facilitara el contacto/reserva de clientes.",
+            "A local glass cleaning business needed a professional website to build customer trust and streamline client bookings and inquiries.",
         stack: [
             "Next.js 15",
             "TypeScript",
@@ -19,9 +17,9 @@ export const PROJECTS: Project[] = [
             "Vercel",
         ],
         challenge: {
-            title: "Cumplimiento GDPR sin sacrificar analítica",
+            title: "GDPR compliance without sacrificing analytics",
             description:
-                "Implementé Klaro + Google Analytics Consent Mode v2 para que el sitio recogiera datos analíticos solo con consentimiento explícito, cumpliendo GDPR sin perder visibilidad sobre el tráfico real.",
+                "Implemented Klaro and Google Analytics Consent Mode v2 to ensure explicit user consent before tracking data, achieving full GDPR compliance while maintaining crucial visibility into traffic.",
         },
         image: "/images/aldebaran.png",
         liveUrl: "https://limpiacristales-net.vercel.app/",
@@ -30,9 +28,9 @@ export const PROJECTS: Project[] = [
     {
         slug: "wewiza",
         title: "WeWiza",
-        tagline: "App móvil nativa con backend propio en Python",
+        tagline: "Native mobile application with a custom Python backend",
         problem:
-            "Construir una aplicación móvil completa de extremo a extremo, incluyendo backend propio, en vez de depender de un BaaS.",
+            "To build a complete end-to-end mobile application with a custom, self-hosted backend instead of relying on external BaaS platforms.",
         stack: [
             "Kotlin",
             "Jetpack Compose",
@@ -40,9 +38,9 @@ export const PROJECTS: Project[] = [
             "FastAPI",
         ],
         challenge: {
-            title: "Backend propio en vez de soluciones gestionadas",
+            title: "Custom backend over managed services",
             description:
-                "Diseñé e implementé una API REST con FastAPI para servir la app, en vez de usar Firebase/Supabase — control total sobre la lógica de negocio y la estructura de datos.",
+                "Designed and implemented a RESTful API using FastAPI to power the mobile application, choosing full control over the database structure and business logic instead of relying on Firebase or Supabase.",
         },
         image: "/images/wewiza.png",
         repoUrl: "https://github.com/JiaChengZhang14/Wewiza",
@@ -51,9 +49,9 @@ export const PROJECTS: Project[] = [
     {
         slug: "portfolio",
         title: "jczhang.dev",
-        tagline: "Este mismo portfolio, construido desde cero",
+        tagline: "This portfolio website, built from scratch",
         problem:
-            "Necesitaba un portfolio propio que demostrara no solo frontend, sino integración full-stack y de IA en un producto real.",
+            "I needed a personal portfolio that would showcase not only my frontend skills but also practical full-stack capabilities and integration with AI.",
         stack: [
             "Next.js 15",
             "TypeScript",
@@ -63,9 +61,9 @@ export const PROJECTS: Project[] = [
             "Vercel",
         ],
         challenge: {
-            title: "Chatbot con contexto propio, sin coste de suscripción",
+            title: "Context-aware chatbot with $0 infrastructure costs",
             description:
-                "Integré un chatbot conectado a la API gratuita de Gemini con contexto sobre mi perfil, manteniendo el coste de la infraestructura en $0.",
+                "Integrated a chatbot powered by Google Gemini API with custom-engineered context about my profile, successfully keeping backend and hosting costs at $0.",
         },
         image: "/images/portfolio.png",
         repoUrl: "https://github.com/JiaChengZhang14/jczhang.dev",

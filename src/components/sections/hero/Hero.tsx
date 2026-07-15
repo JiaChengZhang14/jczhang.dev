@@ -1,5 +1,6 @@
 import { SectionWrapper } from "@/components/SectionWrapper";
 import { TerminalWindow } from "@/components/sections/hero/TerminalWindow";
+import { ScrollIndicator } from "./ScrollIndicador";
 
 export function Hero() {
   return (
@@ -16,7 +17,7 @@ export function Hero() {
             Full-stack developer building AI-powered products
           </h2>
           <p className="mt-4 max-w-md text-fog">
-            Especializado en integrar soluciones de IA en productos existentes: automatización de workflows, features con LLMs, y arquitecturas que combinan frontend, backend e inteligencia artificial.
+            Specializing in integrating AI solutions into existing products: workflow automation, LLM-powered features, and architectures that seamlessly bridge frontend, backend, and artificial intelligence.
           </p>
           <div className="mt-8 flex gap-4">
             <a
@@ -38,6 +39,7 @@ export function Hero() {
         <div className="flex justify-center md:justify-end">
           <TerminalWindow />
         </div>
+        <ScrollIndicator />
       </div>
     </SectionWrapper>
   );

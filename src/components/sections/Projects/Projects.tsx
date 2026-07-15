@@ -18,7 +18,7 @@ export function Projects() {
                 <div>
                     <p className="mb-2 font-mono text-sm text-ember">{"// 02 projects"}</p>
                     <h2 className="font-display text-3xl font-semibold text-paper md:text-4xl">
-                        Proyectos
+                        Projects
                     </h2>
                 </div>
 
