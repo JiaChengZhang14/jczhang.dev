@@ -16,7 +16,6 @@ import {
     SiGooglegemini,
     SiVercel,
     SiGit,
-    SiGithub,
     SiAndroid,
     SiN8N,
     SiClaude,

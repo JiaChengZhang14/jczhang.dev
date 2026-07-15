@@ -19,18 +19,15 @@ export function AiAutomation() {
         <SectionWrapper id="ai-automation">
             <p className="mb-2 font-mono text-sm text-ember">{"// 04 ai & automation"}</p>
             <h2 className="font-display text-3xl font-semibold text-paper md:text-4xl">
-                AI & Automation
+                {"AI & Automation"}
             </h2>
             <p className="mt-4 max-w-2xl text-fog">
-                I don't just use AI tools—I integrate them directly into the stack. My focus is on
-                moving AI from concept to production: building real features rather than isolated experiments.
+                {"I don't just use AI tools—I integrate them directly into the stack. My focus is on moving AI from concept to production: building real features rather than isolated experiments."}
             </p>
 
             <div className="mt-6 rounded-lg border border-signal/20 bg-signal/5 px-5 py-4">
                 <p className="text-sm text-paper/90">
-                    <span className="text-ember">💬</span> See the chat icon in the bottom-right corner?
-                    It is a live integration with the Google Gemini API, running right now with custom-engineered
-                    context about my profile while you read this.
+                    <span className="text-ember">💬</span> {"See the chat icon in the bottom-right corner? It is a live integration with the Google Gemini API, running right now with custom-engineered context about my profile while you read this."}
                 </p>
             </div>
 
