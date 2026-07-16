@@ -8,7 +8,7 @@ const LINES = [
         prompt: "cat focus.txt",
         output: "Frontend dev · Next.js & TypeScript\nIntegrating AI into existing products",
     },
-    { prompt: "status", output: "open to freelance & collaboration" },
+    { prompt: "status", output: "working · open to collaboration" },
 ];
 
 const TYPE_SPEED = 25; // ms por carácter

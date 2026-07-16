@@ -4,6 +4,7 @@ import { Experience } from "@/components/sections/experience/Experience";
 import { Hero } from "@/components/sections/hero/Hero";
 import { Skills } from "@/components/sections/skills/Skills";
 import { Projects } from "@/components/sections/projects/Projects";
+import { Contact } from "@/components/sections/contact/Contact";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Experience />
       <AiAutomation />
       <Skills />
+      <Contact />
       <Footer />
     </main>
   );

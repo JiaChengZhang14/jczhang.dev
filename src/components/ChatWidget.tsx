@@ -14,7 +14,7 @@ export function ChatWidget() {
     const [isOpen, setIsOpen] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
     const [messages, setMessages] = useState<Message[]>([
-        { role: "assistant", content: "¡Hola! Pregúntame lo que quieras sobre Jiacheng y su trabajo." },
+        { role: "assistant", content: "Hi! Feel free to ask me anything about Jiacheng and his work!" },
     ]);
     const [input, setInput] = useState("");
     const [isLoading, setIsLoading] = useState(false);
