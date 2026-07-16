@@ -6,7 +6,7 @@ export function Experience() {
         <SectionWrapper id="experience">
             <p className="mb-2 font-mono text-sm text-ember">{"// 03 experience"}</p>
             <h2 className="font-display text-3xl font-semibold text-paper md:text-4xl">
-                Experiencie
+                Experience
             </h2>
 
             <div className="mt-12 space-y-0">
