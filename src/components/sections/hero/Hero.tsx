@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/components/SectionWrapper";
 import { TerminalWindow } from "@/components/sections/hero/TerminalWindow";
 import { ScrollIndicator } from "./ScrollIndicador";
+import { ContactButton } from "./ContactButton";
 
 export function Hero() {
   return (
@@ -21,18 +22,13 @@ export function Hero() {
           </p>
           <div className="mt-8 flex gap-4">
             <a
-              href="#projects"
+              href="#"
               className="rounded-md bg-ember px-6 py-3 font-medium text-ink transition-colors hover:bg-ember/90"
             >
-              View Projects
+              Check my CV !
             </a>
 
-            <a
-              href="#contact"
-              className="rounded-md border border-signal px-6 py-3 font-medium text-paper transition-colors hover:bg-signal/10 hover:text-white"
-            >
-              Contact
-            </a>
+            <ContactButton />
           </div>
         </div>
 
