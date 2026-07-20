@@ -1,0 +1,99 @@
+{
+    "hero": {
+        "role": "// Desarrollador FullStack",
+        "name": "JiaCheng Zhang",
+        "tagline": "Desarrollador full-stack construyendo productos con IA",
+        "description": "Especializado en integrar soluciones de IA en productos existentes: automatización de workflows, features con LLMs, y arquitecturas que combinan frontend, backend e inteligencia artificial.",
+        "ctaCV": "¡Mira mi CV!",
+        "ctaContact": "Contacto"
+    },
+    "terminal": {
+        "header": "portfolio.sh",
+        "lines": [
+            {
+                "prompt": "whoami",
+                "output": "jiacheng-zhang"
+            },
+            {
+                "prompt": "cat focus.txt",
+                "output": "Dev frontend · Next.js & TypeScript\nIntegrando IA en productos existentes"
+            },
+            {
+                "prompt": "status",
+                "output": "trabajando · abierto a colaborar"
+            }
+        ]
+    },
+    "scrollIndicator": {
+        "ariaLabel": "Ir a proyectos"
+    },
+    "experience": {
+        "label": "// 03 experiencia",
+        "title": "Experiencia"
+    },
+    "aiAutomation": {
+        "label": "// 04 ia y automatización",
+        "title": "IA y Automatización",
+        "intro": "No solo uso herramientas de IA, las integro directamente en el stack. Mi enfoque es llevar la IA de la idea a producción: construir features reales, no experimentos aislados.",
+        "chatBanner": "¿Ves el icono de chat en la esquina inferior derecha? Es una integración real con la API de Google Gemini, corriendo ahora mismo con contexto sobre mi perfil mientras lees esto.",
+        "status": {
+            "shipped": "Lanzado",
+            "inProgress": "En progreso",
+            "exploring": "Explorando"
+        }
+    },
+    "projects": {
+        "label": "// 02 proyectos",
+        "title": "Proyectos",
+        "gridView": "Vista de cuadrícula",
+        "listView": "Vista de lista",
+        "liveSiteAriaLabel": "Visitar sitio en vivo",
+        "repoAriaLabel": "Ver repositorio"
+    },
+    "skills": {
+        "label": "// 05 skills",
+        "title": "Skills"
+    },
+    "contact": {
+        "label": "// 06 contacto",
+        "title": "Hablemos",
+        "subtitle": "¿Tienes un proyecto en mente, una oportunidad, o simplemente quieres charlar sobre desarrollo o IA? Escríbeme.",
+        "form": {
+            "name": "Nombre",
+            "namePlaceholder": "Tu nombre",
+            "email": "Email",
+            "emailPlaceholder": "tu@email.com",
+            "message": "Mensaje",
+            "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+            "submit": "Enviar mensaje",
+            "submitting": "Enviando...",
+            "success": "¡Mensaje enviado! Te responderé pronto.",
+            "error": "Algo salió mal. Intenta de nuevo o escríbeme directo por email."
+        },
+        "emailCard": {
+            "label": "Email",
+            "copyAriaLabel": "Copiar dirección de email"
+        },
+        "social": {
+            "github": "GitHub",
+            "linkedin": "LinkedIn"
+        }
+    },
+    "chatWidget": {
+        "greeting": "¡Hola! Pregúntame lo que quieras sobre Jiacheng y su trabajo.",
+        "header": "// pregunta sobre jiacheng",
+        "placeholder": "Escribe una pregunta...",
+        "typing": "Escribiendo...",
+        "sendAriaLabel": "Enviar mensaje",
+        "closeAriaLabel": "Cerrar chat",
+        "toggleAriaLabel": "Abrir/cerrar chat",
+        "errorMessage": "Algo salió mal. Intenta de nuevo en un momento."
+    },
+    "footer": {
+        "location": "Madrid, España",
+        "copyright": "© {year} JiaCheng Zhang"
+    },
+    "languageSwitcher": {
+        "ariaLabel": "Cambiar idioma"
+    }
+}

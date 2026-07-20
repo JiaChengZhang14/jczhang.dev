@@ -4,6 +4,9 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { AmbientNetwork } from "@/components/AmbientNetwork";
 import { ChatWidget } from "@/components/ChatWidget";
+import { NextIntlClientProvider } from "next-intl";
+import { routing } from "@/i18n/routing";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
@@ -30,17 +33,29 @@ export const metadata: Metadata = {
     "Full-stack developer specialized in Next.js, TypeScript, Supabase and AI integration. Building end-to-end web products and automating workflows with LLMs. Based in Madrid.",
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+
+export default async function RootLayout({
   children,
+  params
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+
+  const { locale } = await params;
   return (
-    <html lang="en" className={cn("dark", "font-sans", geist.variable)}>
+    <html lang={locale} className={cn("dark", "font-sans", geist.variable)}>
       <body className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} bg-ink font-body text-paper antialiased`}>
-        <AmbientNetwork />
-        {children}
-        <ChatWidget />
+        <NextIntlClientProvider>
+          <AmbientNetwork />
+          {children}
+          <LanguageSwitcher />
+          <ChatWidget />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

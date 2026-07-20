@@ -1,37 +1,33 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
-const LINES = [
-    { prompt: "whoami", output: "jiacheng-zhang" },
-    {
-        prompt: "cat focus.txt",
-        output: "Frontend dev · Next.js & TypeScript\nIntegrating AI into existing products",
-    },
-    { prompt: "status", output: "working · open to collaboration" },
-];
-
-const TYPE_SPEED = 25; // ms por carácter
+const TYPE_SPEED = 25;
 
 export function TerminalWindow() {
+    const t = useTranslations("terminal");
+    const lines = t.raw("lines") as { prompt: string; output: string }[];
+
     const [lineIndex, setLineIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
     const [phase, setPhase] = useState<"prompt" | "output">("prompt");
 
     useEffect(() => {
-        if (lineIndex >= LINES.length) return;
+        setLineIndex(0);
+        setCharIndex(0);
+        setPhase("prompt");
+    }, [lines]);
 
-        const currentText =
-            phase === "prompt" ? LINES[lineIndex].prompt : LINES[lineIndex].output;
+    useEffect(() => {
+        if (lineIndex >= lines.length) return;
+        const currentText = phase === "prompt" ? lines[lineIndex].prompt : lines[lineIndex].output;
 
         if (charIndex < currentText.length) {
-            const timer = setTimeout(() => {
-                setCharIndex((c) => c + 1);
-            }, TYPE_SPEED);
+            const timer = setTimeout(() => setCharIndex((c) => c + 1), TYPE_SPEED);
             return () => clearTimeout(timer);
         }
 
-        // Terminó de escribir esta parte
         const pause = setTimeout(() => {
             if (phase === "prompt") {
                 setPhase("output");
@@ -44,7 +40,7 @@ export function TerminalWindow() {
         }, phase === "prompt" ? 200 : 500);
 
         return () => clearTimeout(pause);
-    }, [charIndex, phase, lineIndex]);
+    }, [charIndex, phase, lineIndex, lines]);
 
     return (
         <div className="w-full max-w-xl rounded-lg border border-white/10 bg-surface font-mono text-base shadow-2xl shadow-signal/10">
@@ -52,36 +48,27 @@ export function TerminalWindow() {
                 <span className="h-3.5 w-3.5 rounded-full bg-ember/70" />
                 <span className="h-3.5 w-3.5 rounded-full bg-fog/40" />
                 <span className="h-3.5 w-3.5 rounded-full bg-fog/40" />
-                <span className="ml-2 text-sm text-fog">portfolio.sh</span>
+                <span className="ml-2 text-sm text-fog">{t("header")}</span>
             </div>
             <div className="space-y-4 px-5 py-6">
-                {/* Líneas ya completadas */}
-                {LINES.slice(0, lineIndex).map((line, i) => (
+                {lines.slice(0, lineIndex).map((line, i) => (
                     <div key={i}>
                         <p className="text-signal-light">
                             <span className="text-fog">$</span> {line.prompt}
                         </p>
-                        <p className="whitespace-pre-line pl-3 text-paper/90">
-                            {line.output}
-                        </p>
+                        <p className="whitespace-pre-line pl-3 text-paper/90">{line.output}</p>
                     </div>
                 ))}
-
-                {/* Línea actual, escribiéndose */}
-                {lineIndex < LINES.length && (
+                {lineIndex < lines.length && (
                     <div>
                         <p className="text-signal-light">
                             <span className="text-fog">$</span>{" "}
-                            {phase === "prompt"
-                                ? LINES[lineIndex].prompt.slice(0, charIndex)
-                                : LINES[lineIndex].prompt}
-                            {phase === "prompt" && (
-                                <span className="animate-pulse text-signal-light">▍</span>
-                            )}
+                            {phase === "prompt" ? lines[lineIndex].prompt.slice(0, charIndex) : lines[lineIndex].prompt}
+                            {phase === "prompt" && <span className="animate-pulse text-signal-light">▍</span>}
                         </p>
                         {phase === "output" && (
                             <p className="whitespace-pre-line pl-3 text-paper/90">
-                                {LINES[lineIndex].output.slice(0, charIndex)}
+                                {lines[lineIndex].output.slice(0, charIndex)}
                                 <span className="animate-pulse text-signal-light">▍</span>
                             </p>
                         )}
