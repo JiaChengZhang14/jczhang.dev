@@ -21,7 +21,9 @@ export async function Hero() {
           <p className="mt-4 max-w-md text-fog">{t("description")}</p>
           <div className="mt-8 flex gap-4">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/jiacheng-zhang-a69739251/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-md bg-ember px-6 py-3 font-medium text-ink transition-colors hover:bg-ember/90"
             >
               {t("ctaCV")}
