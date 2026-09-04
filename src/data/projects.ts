@@ -3,6 +3,30 @@ import { Project } from "@/lib/types";
 export const PROJECTS: Record<"en" | "es", Project[]> = {
     en: [
         {
+            slug: "kokorostar",
+            title: "Kokoro Star | Masajes y Bienestar en Benidorm",
+            tagline: "Professional massage and wellness website for client ",
+            problem:
+                "Tailored development of the website for a local massage and wellness business. SEO optimization and responsive design.",
+            stack: [
+                "Next.js 15",
+                "TypeScript",
+                "Tailwind CSS",
+                "shadcn/ui",
+                "Google Analytics 4",
+                "Google Tag Manager",
+                "Vercel",
+            ],
+            challenge: {
+                title: "Local SEO and Technical Optimization",
+                description:
+                    "Implemented advanced SEO strategies, including structured data and meta tags, to enhance local search visibility. Optimized website performance and responsiveness for a seamless user experience across devices.",
+            },
+            image: "#",
+            liveUrl: "https://kokorostar.com/",
+            featured: true,
+        },
+        {
             slug: "aldebaran",
             title: "Limpiacristales.net",
             tagline: "Professional service website for client (Under development)",
@@ -67,6 +91,30 @@ export const PROJECTS: Record<"en" | "es", Project[]> = {
         },
     ],
     es: [
+        {
+            slug: "kokorostar",
+            title: "Kokoro Star | Masajes y Bienestar en Benidorm",
+            tagline: "Web de masajes y bienestar profesional para cliente",
+            problem:
+                "Desarrollo a medida de la web para un negocio local de masajes y bienestar. Optimización SEO y diseño responsive.",
+            stack: [
+                "Next.js 15",
+                "TypeScript",
+                "Tailwind CSS",
+                "shadcn/ui",
+                "Google Analytics 4",
+                "Google Tag Manager",
+                "Vercel",
+            ],
+            challenge: {
+                title: "SEO local y optimización técnica",
+                description:
+                    "Implementé estrategias avanzadas de SEO, incluyendo datos estructurados y metaetiquetas, para mejorar la visibilidad en búsquedas locales. Optimicé el rendimiento y la capacidad de respuesta del sitio web para una experiencia de usuario fluida en todos los dispositivos.",
+            },
+            image: "#",
+            liveUrl: "https://kokorostar.com/",
+            featured: true,
+        },
         {
             slug: "aldebaran",
             title: "Limpiacristales.net",
