@@ -13,6 +13,7 @@ WORK EXPERIENCE:
 - Completed an internship at Airbus, where he developed an internal bussiness application with ABAP for SAP. 
 
 FEATURED PROJECTS:
+- Kokoro Star: a professional massage and wellness website built with Next.js 15, TypeScript, Tailwind, shadcn/ui, Google Analytics 4, Google Tag Manager, and Vercel. It's live at https://kokorostar.com/
 - Aldebaran (limpiacristales.net): a professional services website built with Next.js 15, TypeScript, Tailwind, shadcn/ui, Firebase Firestore, and GDPR consent management with Klaro
 - WeWiza: a mobile app built with Kotlin and Jetpack Compose, with a Python/FastAPI backend
 - This portfolio itself: built with Next.js, TypeScript, Supabase, and a Gemini-powered chatbot
